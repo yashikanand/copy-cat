@@ -1,5 +1,6 @@
 @import url(//db.onlinewebfonts.com/c/243df030c51083b6e70c2d2b02582efc?family=Baton+Turbo);
 @import url('http://fonts.cdnfonts.com/css/tiempos-headline');
+@import url(//db.onlinewebfonts.com/c/1b3f9cb78376a36884f3908f37a42c91?family=Copyright+Klim+Type+Foundry);
 
 :root {
     --green: #5ebe92;
@@ -15,7 +16,7 @@ header {
     flex-direction: initial;
     justify-content: space-between;
     align-items: flex-end;
-    padding-bottom: 50px;
+    padding-bottom: 7vw;
     border-bottom: 5px solid var(--green);
 }
 
@@ -25,23 +26,25 @@ header {
 
 #author {
     font-family: 'Baton Turbo Regular', sans-serif;
-    font-size: 18px;
+    font-size: 20px;
     width: fit-content;
-    padding-bottom: 4px;
+    padding-bottom: 10px;
     border-bottom: black solid 2px;
     text-transform: uppercase;
+    font-weight: 500;
 }
 
 #title {
     font-family: 'Tiempos Headline', sans-serif;
-    font-size: 40px;
+    font-size: 50px;
     width: fit-content;
 }
 
 #description {
     font-family: 'Baton Turbo Regular', sans-serif;
-    font-size: 18px;
+    font-size: 20px;
     color: var(--grey);
+    font-weight: 300;
 }
 
 #blog-issue,td {
@@ -58,4 +61,31 @@ header {
 
 #blog-issue > caption {
     text-align: left;
+}
+
+section {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.blog-body {
+    font-family: 'Copyright Klim Type Foundry', sans-serif;
+    width: 60%;
+    line-height: 2;
+    font-size: 20px;
+    margin-top: 7vw;
+}
+
+aside {
+    width: 30%;
+    border: 2px var(--green);
+    border-style: solid none solid none;
+    font-family: 'Baton Turbo Regular', sans-serif;
+    font-weight: 300;
+    font-size: 30px;
+    line-height: 1.5;
+    color: var(--green);
+    padding: 4vw 0vw 4vw 0vw;
 }
