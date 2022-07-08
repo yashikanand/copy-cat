@@ -1,0 +1,61 @@
+@import url(//db.onlinewebfonts.com/c/243df030c51083b6e70c2d2b02582efc?family=Baton+Turbo);
+@import url('http://fonts.cdnfonts.com/css/tiempos-headline');
+
+:root {
+    --green: #5ebe92;
+    --grey: #595959;
+}
+
+body {
+    margin: 50px;
+}
+
+header {
+    display: flex;
+    flex-direction: initial;
+    justify-content: space-between;
+    align-items: flex-end;
+    padding-bottom: 50px;
+    border-bottom: 5px solid var(--green);
+}
+
+#blog-info{
+    width: 60%;
+}
+
+#author {
+    font-family: 'Baton Turbo Regular', sans-serif;
+    font-size: 18px;
+    width: fit-content;
+    padding-bottom: 4px;
+    border-bottom: black solid 2px;
+    text-transform: uppercase;
+}
+
+#title {
+    font-family: 'Tiempos Headline', sans-serif;
+    font-size: 40px;
+    width: fit-content;
+}
+
+#description {
+    font-family: 'Baton Turbo Regular', sans-serif;
+    font-size: 18px;
+    color: var(--grey);
+}
+
+#blog-issue,td {
+    font-family: 'Baton Turbo Regular', sans-serif;
+    text-transform: uppercase;
+    color: var(--green);
+    border-collapse: collapse;
+    border: 1px solid var(--green);
+}
+
+#blog-issue {
+    width: 30%;
+}
+
+#blog-issue > caption {
+    text-align: left;
+}
