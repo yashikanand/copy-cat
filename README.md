@@ -20,6 +20,12 @@ This is a Publicis Sapient graduate challenge for the case study interview.
 It is a copy cat challenge where I copied the screenshot layout provided in the source folder.
 This code is built on HTML for creating webpage and CSS for styling the webpage without using any framework.
 
+The html code is built with semantic elements keeping accessability in mind.
+The layout is designed for different devices and divided into 2 different range of width -
+
+1. Less than 768px (for small, mid size mobiles and tablets).
+2. 768px or more (for big tablets, landscape orientation and desktops).
+
 ### How to use?
 
 To download this code, you can choose one of the following options -
@@ -43,3 +49,7 @@ Option 2.
 
 1. The quote(content on the right hand side in screenshot) is supposed to be shown at the end of the blog content on screen with width 768px or less.
 2. No clickables on the website. (No information for target link provided with screenshot)
+
+### Contact
+
+For feedback and suggestions, you can contact me at my email - yashik.anand99@gmail.com
