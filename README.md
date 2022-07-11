@@ -50,6 +50,12 @@ Option 2.
 1. The quote(content on the right hand side in screenshot) is supposed to be shown at the end of the blog content on screen with width 768px or less.
 2. No clickables on the website. (No information for target link provided with screenshot)
 
+### Testing
+
+The website is tested manually on local server using the inspect element to test different screen sizes.
+
+The cross browser compatibility is tested manually on Google Chrome and Safari Browser.
+
 ### Contact
 
 For feedback and suggestions, you can contact me at my email - yashik.anand99@gmail.com
