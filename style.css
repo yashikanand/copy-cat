@@ -1,18 +1,23 @@
+/* Importing the required fonts for the webpage */
 @import url(//db.onlinewebfonts.com/c/243df030c51083b6e70c2d2b02582efc?family=Baton+Turbo);
 @import url("http://fonts.cdnfonts.com/css/tiempos-headline");
 @import url(//db.onlinewebfonts.com/c/1b3f9cb78376a36884f3908f37a42c91?family=Copyright+Klim+Type+Foundry);
 
+/* Adding the standard colours. */
 :root {
   --green: #5ebe92;
   --grey: #595959;
 }
 
+/* General styling for overall looks and appeals with overall different devices coverage. */
+/* Styling for header of the webpage. */
 header {
   display: flex;
   padding-bottom: 7vw;
   border-bottom: 5px solid var(--green);
 }
 
+/* Styling for the author name. */
 #author {
   font-family: "Baton Turbo Regular", sans-serif;
   width: fit-content;
@@ -22,17 +27,20 @@ header {
   font-weight: 500;
 }
 
+/* Styling for the title. */
 #title {
   font-family: "Tiempos Headline", sans-serif;
   width: fit-content;
 }
 
+/* Styling for the description of the article. */
 #description {
   font-family: "Baton Turbo Regular", sans-serif;
   color: var(--grey);
   font-weight: 300;
 }
 
+/* Styling for the issue date and section. */
 #blog-issue {
   font-family: "Baton Turbo Regular", sans-serif;
   text-transform: uppercase;
@@ -51,16 +59,19 @@ td {
   padding: 10px;
 }
 
+/* Styling for the article section. */
 section {
   display: flex;
 }
 
+/* Styling for the text section. */
 .blog-body {
   font-family: "Copyright Klim Type Foundry", sans-serif;
   line-height: 2;
   margin-top: 7vw;
 }
 
+/* Styling for the quote section. */
 aside {
   border: 2px var(--green);
   border-style: solid none solid none;
@@ -71,34 +82,40 @@ aside {
   padding: 4vw 0vw 4vw 0vw;
 }
 
+/* Styling according to the device width size specifically 
+for small and medium width mobile phones and tablets. */
 @media only screen and (max-width: 768px) {
+  /* Body arrangement styling. */
   body {
     margin: 20px;
   }
+
+  /* Styling for header of the webpage. */
   header {
     flex-direction: column;
   }
+
+  /* Font size for the author name. */
   #author {
     font-size: 14px;
   }
 
+  /* Font size for the title of the page. */
   #title {
     font-size: 30px;
   }
+
+  /* Font size for the description of the article. */
   #description {
     font-size: 14px;
   }
 
-  #blog-info {
-    width: 100%;
-  }
   #blog-issue {
     width: 50%;
     font-size: 10px;
   }
-  #blog-body {
-    font-size: 14px;
-  }
+
+  /* Styling for the body of the article with content. */
   section {
     flex-direction: column;
   }
@@ -106,49 +123,68 @@ aside {
   section > * {
     width: 100%;
   }
+
+  #blog-info {
+    width: 100%;
+  }
+
+  .blog-body {
+    font-size: 14px;
+  }
+
   aside {
     font-size: 20px;
   }
 }
 
+/* Styling according to the device width size specifically 
+for bigger devices and desktop versions. */
 @media only screen and (min-width: 768px) {
+  /* Body arrangement styling. */
   body {
     margin: 50px;
   }
+
+  /* Styling for header of the webpage. */
   header {
     flex-direction: row;
     justify-content: space-between;
     align-items: flex-end;
   }
+
+  /* Font size for the author name. */
   #author {
     font-size: 20px;
   }
 
+  /* Font size for the title of the page. */
   #title {
     font-size: 50px;
   }
 
+  /* Font size for the description of the article. */
   #description {
     font-size: 20px;
-  }
-  #blog-info {
-    width: 60%;
   }
 
   #blog-issue {
     width: 30%;
     font-size: 14px;
   }
-  #blog-body {
-    font-size: 18px;
-  }
+
+  /* Styling for the body of the article with content. */
   section {
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
   }
 
+  #blog-info {
+    width: 60%;
+  }
+
   .blog-body {
+    font-size: 18px;
     width: 60%;
   }
 
