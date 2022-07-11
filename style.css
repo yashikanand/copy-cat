@@ -7,26 +7,14 @@
   --grey: #595959;
 }
 
-body {
-  margin: 50px;
-}
-
 header {
   display: flex;
-  flex-direction: initial;
-  justify-content: space-between;
-  align-items: flex-end;
   padding-bottom: 7vw;
   border-bottom: 5px solid var(--green);
 }
 
-#blog-info {
-  width: 60%;
-}
-
 #author {
   font-family: "Baton Turbo Regular", sans-serif;
-  font-size: 20px;
   width: fit-content;
   padding-bottom: 10px;
   border-bottom: black solid 2px;
@@ -36,19 +24,16 @@ header {
 
 #title {
   font-family: "Tiempos Headline", sans-serif;
-  font-size: 50px;
   width: fit-content;
 }
 
 #description {
   font-family: "Baton Turbo Regular", sans-serif;
-  font-size: 20px;
   color: var(--grey);
   font-weight: 300;
 }
 
 #blog-issue {
-  width: 30%;
   font-family: "Baton Turbo Regular", sans-serif;
   text-transform: uppercase;
   color: var(--green);
@@ -68,30 +53,107 @@ td {
 
 section {
   display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  align-items: center;
 }
 
 .blog-body {
   font-family: "Copyright Klim Type Foundry", sans-serif;
-  width: 60%;
   line-height: 2;
-  font-size: 18px;
   margin-top: 7vw;
 }
 
 aside {
-  width: 30%;
   border: 2px var(--green);
   border-style: solid none solid none;
   font-family: "Baton Turbo Regular", sans-serif;
   font-weight: 300;
-  font-size: 35px;
   line-height: 1.5;
   color: var(--green);
   padding: 4vw 0vw 4vw 0vw;
 }
 
-code {
+@media only screen and (max-width: 768px) {
+  body {
+    margin: 20px;
+  }
+  header {
+    flex-direction: column;
+  }
+  #author {
+    font-size: 14px;
+  }
+
+  #title {
+    font-size: 30px;
+  }
+  #description {
+    font-size: 14px;
+  }
+
+  #blog-info {
+    width: 100%;
+  }
+  #blog-issue {
+    width: 50%;
+    font-size: 10px;
+  }
+  #blog-body {
+    font-size: 14px;
+  }
+  section {
+    flex-direction: column;
+  }
+
+  section > * {
+    width: 100%;
+  }
+  aside {
+    font-size: 20px;
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  body {
+    margin: 50px;
+  }
+  header {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-end;
+  }
+  #author {
+    font-size: 20px;
+  }
+
+  #title {
+    font-size: 50px;
+  }
+
+  #description {
+    font-size: 20px;
+  }
+  #blog-info {
+    width: 60%;
+  }
+
+  #blog-issue {
+    width: 30%;
+    font-size: 14px;
+  }
+  #blog-body {
+    font-size: 18px;
+  }
+  section {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .blog-body {
+    width: 60%;
+  }
+
+  aside {
+    width: 30%;
+    font-size: 35px;
+  }
 }
